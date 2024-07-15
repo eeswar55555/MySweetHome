@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel="stylesheet" href="css/search_homes_style.css">
+</head>
+<body>
+
+  <%- include('partials/t_navbar') %>
+  
+  <div class="container">
+
+    <form action="/search_homes" method="post">
+        <div class="input">
+          <input type="text"  name="loc" autocomplete="off" placeholder="Enter City / Area name">
+          <button type="submit">Search</button>
+        </div>
+    </form>
+
+    <div class="results">
+      
+        <% for(let i=0;i<homes.length;i++){ %>
+            <a href="/homes/<%= homes[i]._id %>">
+                <div class="card prop">
+                  <div class="img"></div>
+                  <div class="matter">
+                    <h5><%= homes[i].name %></h5>
+                  </div>
+                </div>
+            </a>
+          <% } %>
+
+    </div>
+
+  </div>
+</body>
+</html>

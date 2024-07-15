@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add</title>
+  <link rel="stylesheet" href="css/properties_style.css">
+</head>
+<body>
+
+  <%- include('partials/o_navbar') %>
+
+  <div class="heading">
+    <h1>Your properties :</h1>
+  </div>
+
+  <div class="container">
+
+    <% for(let i=0;i<props.length;i++){ %>
+    <div class="card prop">
+      <div class="img">
+        
+      </div>
+      <div class="matter">
+        <h5><%= props[i].name %></h5>
+      </div>
+    </div>
+  <% } %>
+
+    <div class="card add">
+      <a href="/add_properties">+</a>
+    </div>
+
+  </div>
+</body>
+</html>

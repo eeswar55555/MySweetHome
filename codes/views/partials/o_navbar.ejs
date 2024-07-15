@@ -1,0 +1,112 @@
+<nav class="navbar">    
+    <div class="navdiv">
+        <div class="logo"><img src="/css/imglogo.png"></div>
+        <ul>
+            <li><a href="/owner_home_page">Home</a></li>
+            <li><a href="/properties">Properties</a></li>
+            <li><a href="">Messages</a></li>
+            <li><a href="/o_about">About</a></li>
+        </ul>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <img class="acc_photo" src="/css/profile-user.png">
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Settings</a>
+                <a href="/logout">Log-out</a>
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+</nav>
+
+<style>
+
+    
+.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            right: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Show the dropdown menu when the user clicks on the button */
+        .dropdown:focus-within .dropdown-content {
+            display: block;
+        }
+
+        /* Optional styling for the button */
+        .dropbtn {
+            padding: 0;
+            border: none;
+            cursor: pointer;
+            border-radius: 70%;
+        }
+
+        .dropbtn:focus {
+            outline: none;
+        }
+
+/* ************************ */
+
+.acc_photo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo img{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+.navdiv a{
+    text-decoration: none;
+}
+.navdiv{
+    
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    display: flex;
+    /* background-color: yellowgreen; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar li a{
+    font-size: 20px;
+    margin-right: 40px;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar{
+    margin-top: 0;
+    background: transparent;
+  backdrop-filter: blur(35px);
+    position: sticky;
+    top: 0;
+}
+
+</style>

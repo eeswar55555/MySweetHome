@@ -1,0 +1,96 @@
+****************************************
+home provider :
+
+1. name of home
+2. flat height-door number
+3. flat dimensions( arpet area )
+4. type( 2BHK , 3BHK , single , duplex, triplex , ... )
+5. type of living ( apartment , individual , co-living-society )
+6. tenative House rent
+7. feautures provided( water , fan , lights , furnished?  )
+8. add location( address(all details) & (point geolocation) )
+9. contact number( whatsapp nice )
+10. email
+11. floor number
+12. no.of bathrooms
+13. tenant preferred( bachelors/family ) 
+
+
+
+profile :
+
+1. your added homes( details ) 
+2. your details
+
+
+****************************************
+search homes by users :
+
+1. by keywords
+2. by house name
+3. by type & type of living
+4. *** houses near ur area / near a certain point ***
+5. budget( set min & max )
+6. by area( vijayawada ) & colony name
+7. by reviews...
+8. ****** now use filter options to filter homes as per above choices ********
+
+
+
+profile :
+
+1. favourites
+2. user details ( less only )
+3. preferreed homes...
+
+
+
+****************************************
+user review
+for 10 stars for their home...
+
+1.budget
+2.enviroment
+3.facilities
+
+
+***************************************
+analyse details of home
+shown by ur site
+
+1.value per sq.feet
+2.relative cost in that area
+3. also user reviews...
+
+***************************************
+backend plan
+
+1. when address provided then see area(city) and use that in [search homes] to sort [homes in ur area]
+2. when a flat is clicked by user then 1st photos are displayed in large size then details
+3. use CSS grid to arrange properties for owner && homes for tenant
+4. learn about websites's messenger
+5. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.card > a{
+  text-decoration: none;
+}
+body{
+  display: grid;
+}
+.input{
+  height: 100px;
+  background-color: rosybrown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input input{
+  height: 50px;
+  width: 400px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.results{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 20px;
+    border: 2px solid gold;
+}
+
+.img{
+    height: 70%;
+    background-image: url("https://png.pngtree.com/element_our/sm/20180515/sm_5afb1035655ac.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.matter{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.input button{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+  }

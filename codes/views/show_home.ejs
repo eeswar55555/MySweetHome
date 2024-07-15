@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel="stylesheet" href="/css/show_home_style.css">
+
+</head>
+<body>
+
+    <%- include('partials/t_navbar') %>
+    
+  <div class="container">
+
+    <div class="img">
+      <div class="image"></div>
+    </div>
+
+    <div class="matter">
+        <h1>Home Details</h1>
+
+        <div>
+            
+            <label>Name : </label>
+            <p> <%= home.name %> </p>
+        </div>
+        
+        <div>
+            
+            <label>Floor Number : </label>
+            <p> <%= home.floor_no %> </p>
+        </div>
+        
+        <div>
+            
+            <label>Carpet Area : </label>
+            <p> <%= home.carpet_area %> </p>
+        </div>
+
+        <div>
+            
+            <label>Flat type : </label>
+            <p> <%= home.flat_type %> </p>
+        </div>
+
+        <div>
+            
+            <label>Living type : </label>
+            <p> <%= home.living_type %> </p>
+        </div>
+
+        <div>
+            
+            <label>House Rent : </label>
+            <p> <%= home.house_rent %> </p>
+        </div>
+       
+        <div>
+            
+            <label>Features Provided : </label>
+            <p> <%= home.features_provided %> </p>
+        </div> 
+
+        <div>
+            
+            <label>City : </label>
+            <p> <%= home.location.city %> </p>
+        </div>
+
+        <div>
+            
+            <label>Area : </label>
+            <p> <%= home.location.area %> </p>
+        </div>
+
+        <div>
+            
+            <label>Contact Number : </label>
+            <p> <%= home.contact_number %> </p>
+        </div>
+
+        <div>
+            
+            <label>Number of Bathrooms : </label>
+            <p> <%= home.no_of_bathrooms %> </p>
+        </div>
+
+        <div>
+            
+            <label>Tenants Preferred : </label>
+            <p> <%= home.tenants_preferred %> </p>
+        </div>
+
+        <div>
+            
+            <label>Raating : </label>
+            <p> <%= home.rating %> </p>
+        </div>
+
+    </div>
+
+    <div class="contact">
+        <hr>
+        <h5>Contact Owner</h5>
+        <a href="">home.owner_id.username</a>
+    </div>
+
+  </div>
+</body>
+</html>

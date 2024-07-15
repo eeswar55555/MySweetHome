@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add</title>
+  <link rel="stylesheet" href="css/add_properties_style.css">
+</head>
+<body>
+
+  <%- include('partials/o_navbar') %>
+
+  <div class="heading">
+    <h1>Add Your new Property :</h1>
+  </div>
+
+  <div class="container">
+    <form action="" method="post">
+
+      <hr>
+      <h1>Flat Details</h1>
+      <div class="input">
+        <label for="name">Property Name : </label>
+        <input name="name" autocomplete="off">
+      </div>
+
+      <div class="input">
+        <label for="floor_no">Floor Number : </label>
+        <input name="floor_no" autocomplete="off">
+      </div>
+
+      <div class="input">
+        <label>Carpet Area : </label>
+        <input name="carpet_area" autocomplete="off">
+      </div>
+
+      <div class="input">
+        <label>Number of Bathrooms : </label>
+        <input name="no_of_bathrooms" autocomplete="off">
+      </div>
+      
+      <div class="input">
+        <label>Flat Type : </label>
+        <select name="flat_type" id="select">
+          <option value="1BHK">1BHK</option>
+          <option value="2BHK">2BHK</option>
+          <option value="3BHK">3BHK</option>
+          <option value="4BHK +">4BHK +</option>
+          <option value="Duplex">Duplex</option>
+          <option value="Triplex">Triplex</option>
+        </select>
+      </div>
+      
+      
+      <div class="input">
+        <label>House Living Type : </label>
+        <select name="living_type" id="select">
+          <option value="Apartment">Apartment</option>
+          <option value="Individual">Individual</option>
+          <option value="Villa">Villa</option>
+          <option value="Society">Society</option>
+        </select>
+      </div>
+      
+      <div class="input">
+        <label>House Rent : </label>
+        <input name="house_rent" autocomplete="off" required>
+      </div>
+      
+      <div class="input">
+        <p><label>Features Provided : </label></p>
+        <textarea name="features_provided" cols="90" rows="5"></textarea>
+      </div>
+
+      <hr>
+      <h1>Location</h1>
+
+      <div class="input">
+        <label>City : </label>
+        <input name="city" autocomplete="off">
+      </div>
+
+      <div class="input">
+        <label>Area : </label>
+        <input name="area" autocomplete="off">
+      </div>
+      
+      <hr>
+      <h1>Personals</h1>
+      
+      <div class="input">
+        <label>Contact Number : </label>
+        <input name="contact_number" autocomplete="off">
+      </div>
+
+      <div class="input">
+        <label>Tenant Preferred : </label>
+        <input name="tenants_preferred" autocomplete="off">
+      </div>
+      
+      <hr>
+
+      <div class="btn">
+        <button type="submit">Add Your Property</button>
+      </div>
+
+    </form>
+  </div>
+
+
+</body>
+</html>
